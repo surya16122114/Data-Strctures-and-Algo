@@ -26,7 +26,7 @@ Constraints:
 The product of any subarray of nums is guaranteed to fit in a 32-bit integer.
  https://leetcode.com/problems/maximum-product-subarray/description/
 */ 
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.Arrays;
 
 public class MaxProductSubArray {
    class Solution {

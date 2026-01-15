@@ -27,7 +27,7 @@ intervals[i].length == 2
 0 <= starti <= endi <= 104
  */
  //Leetcode problem link: https://leetcode.com/problems/merge-intervals/
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.MergeIntervals;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

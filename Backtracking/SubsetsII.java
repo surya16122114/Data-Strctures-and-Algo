@@ -21,7 +21,7 @@ Constraints:
 -10 <= nums[i] <= 10
 Leetcode problem link: https://leetcode.com/problems/subsets-ii/
 */
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.Backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;

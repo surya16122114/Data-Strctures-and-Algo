@@ -33,7 +33,7 @@ All elements of candidates are distinct.
 1 <= target <= 40
 Leetcode problem link: https://leetcode.com/problems/combination-sum/
 */
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.Backtracking;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -25,7 +25,7 @@ Constraints:
 1 <= nums.length <= 100
 0 <= nums[i] <= 400
  */
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.DP;
 
 public class HouseRobber {
    class Solution {

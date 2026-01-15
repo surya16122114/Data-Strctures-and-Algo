@@ -33,7 +33,7 @@ text1 and text2 consist of only lowercase English characters.
 Leetcode problem link: https://leetcode.com/problems/longest-common-subsequence/
 */
  
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.DP;
 
 public class LCS {
     class Solution {

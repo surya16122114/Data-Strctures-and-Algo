@@ -1,5 +1,5 @@
 //leetcode poroblem link: https://leetcode.com/problems/binary-tree-inorder-traversal/
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.Trees;
 
 import java.util.ArrayList;
 import java.util.List;

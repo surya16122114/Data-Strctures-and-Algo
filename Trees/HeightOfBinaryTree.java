@@ -1,4 +1,4 @@
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.Trees;
 
 
 public class HeightOfBinaryTree {

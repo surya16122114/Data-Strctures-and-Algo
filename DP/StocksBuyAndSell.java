@@ -27,7 +27,7 @@ Constraints:
 leetcode problem link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 */
 
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.DP;
 
 public class StocksBuyAndSell {
  

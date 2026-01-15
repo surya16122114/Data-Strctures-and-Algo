@@ -24,7 +24,7 @@ n == nums.length
 nums[i] is either 0, 1, or 2.
 leetcode problem link: https://leetcode.com/problems/sort-colors/
 */
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.Miscellanious;
 
 class SortColors{
         public void sortColors(int[] nums) {

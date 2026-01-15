@@ -33,7 +33,7 @@ Constraints:
 Leetcode problem link: https://leetcode.com/problems/longest-increasing-subsequence/
 */
 
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.DP;
 
 public class LIS {
     class Solution {

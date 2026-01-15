@@ -16,7 +16,7 @@ Output: 3
 Explanation: There is only 1 way to pick a piece of length 1.
 gfg problem link: https://www.geeksforgeeks.org/problems/rod-cutting0840/1
 */
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.DP;
 public class RodCuttingGfg {
    class Solution {
     public int cutRod(int[] price) {

@@ -29,7 +29,7 @@ Constraints:
 1 <= coins[i] <= 231 - 1
 0 <= amount <= 104
 */
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.DP;
 
 public class CoinChange {
     class Solution {

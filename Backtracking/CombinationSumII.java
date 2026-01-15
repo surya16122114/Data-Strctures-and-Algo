@@ -36,7 +36,7 @@ Leetcode problem link: https://leetcode.com/problems/combination-sum-ii/
  */
 
 
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.Backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;

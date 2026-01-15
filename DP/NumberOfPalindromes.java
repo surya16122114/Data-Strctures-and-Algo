@@ -1,4 +1,4 @@
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.DP;
 
 public class NumberOfPalindromes {
     class Solution {

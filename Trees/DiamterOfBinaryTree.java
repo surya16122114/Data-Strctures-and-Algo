@@ -1,4 +1,4 @@
-package DataStructuresAndAlgo;
+package DataStructuresAndAlgo.Trees;
 /* 
 leetcode problem link: https://leetcode.com/problems/diameter-of-binary-tree/
 Given the root of a binary tree, return the length of the diameter of the tree.

@@ -1,3 +1,5 @@
+package DataStructuresAndAlgo.DP;
+
 public class DistinctSubsequences {
     class Solution {
 

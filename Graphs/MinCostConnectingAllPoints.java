@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 public class MinCostConnectingAllPoints {
     class Solution {
     public int minCostConnectPoints(int[][] points) {
-        List<List<Edge>> adj=new ArrayList<>();
+        ArrayList<ArrayList<Edge>> adj=new ArrayList<>();
         
 
         int n=points.length;    

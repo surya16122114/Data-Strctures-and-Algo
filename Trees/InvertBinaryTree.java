@@ -1,0 +1,32 @@
+package DataStructuresAndAlgo.Trees;
+
+public class InvertBinaryTree {
+    class Solution {
+    public TreeNode invertTree(TreeNode root) {
+        getInvertedTree(root);
+        return root;
+    }
+
+    public void getInvertedTree(TreeNode root){
+        if(root==null)
+        return;
+        TreeNode temp=root.left;
+        root.left=root.right;
+        root.right=temp;
+        invertTree(root.left);
+        invertTree(root.right);
+    }
+}
+  public class TreeNode {
+      int val;
+      TreeNode left;
+      TreeNode right;
+      TreeNode() {}
+      TreeNode(int val) { this.val = val; }
+      TreeNode(int val, TreeNode left, TreeNode right) {
+          this.val = val;
+          this.left = left;
+          this.right = right;
+      }
+  }
+}

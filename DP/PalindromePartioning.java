@@ -1,4 +1,4 @@
-package DataStructuresAndAlgo.DP;
+package DP;
 
 import java.util.ArrayList;
 import java.util.List;

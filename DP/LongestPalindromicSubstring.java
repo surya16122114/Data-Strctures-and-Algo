@@ -1,4 +1,4 @@
-package DataStructuresAndAlgo.DP;
+package DP;
 
 public class LongestPalindromicSubstring {
     class Solution {

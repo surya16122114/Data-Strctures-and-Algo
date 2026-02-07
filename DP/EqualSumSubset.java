@@ -23,7 +23,7 @@ Constraints:
 1 <= nums[i] <= 100
 */
 
-package DataStructuresAndAlgo.DP;
+package DP;
 
 public class EqualSumSubset {
     class Solution {

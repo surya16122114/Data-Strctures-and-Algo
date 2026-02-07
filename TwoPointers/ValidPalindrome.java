@@ -1,4 +1,4 @@
-package DataStructuresAndAlgo.TwoPointers;
+package TwoPointers;
 
 public class ValidPalindrome {
     class Solution {

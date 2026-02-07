@@ -1,4 +1,4 @@
-package DataStructuresAndAlgo.TwoPointers;
+package TwoPointers;
 
 import java.util.ArrayList;
 import java.util.Arrays;

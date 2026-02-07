@@ -1,4 +1,4 @@
-package DataStructuresAndAlgo.Trees;
+package Trees;
 
 import java.util.Arrays;
 

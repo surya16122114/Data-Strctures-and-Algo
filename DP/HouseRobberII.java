@@ -1,5 +1,5 @@
 //leetcoode problem link: https://leetcode.com/problems/house-robber-ii/description/
-package DataStructuresAndAlgo.DP;
+package DP;
 
 public class HouseRobberII {
   class Solution {

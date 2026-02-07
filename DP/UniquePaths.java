@@ -1,4 +1,4 @@
-package DataStructuresAndAlgo.DP;
+package DP;
 //leetcode problem link : https://leetcode.com/problems/unique-paths/description/
 public class UniquePaths {
     class Solution {

@@ -48,3 +48,6 @@ public class MinStack {
  * int param_4 = obj.getMin();
  */ 
 }
+
+
+//we can do the same problem by using a Stack<Pair> where the pair will store the value and the minimum value at that point of time. So when we pop the element we will also pop the minimum value at that point of time. This way we can get the minimum value in O(1) time complexity.

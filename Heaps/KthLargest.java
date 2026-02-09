@@ -3,10 +3,10 @@ package Heaps;
 import java.util.PriorityQueue;
 
 public class KthLargest {
-   class KthLargest {
+   class KthLargestElementInAStream {
     int k;
     PriorityQueue<Integer> pq=new PriorityQueue<>();
-    public KthLargest(int k, int[] nums) {
+    public KthLargestElementInAStream(int k, int[] nums) {
         this.k=k;
         for(int i=0; i<nums.length; i++){
             //we maintain the size k everytime, when the size is >k we will pop the least element, and add the next element

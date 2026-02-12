@@ -3,7 +3,7 @@ package SlidingWindow;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MaximumRepeatingCharacter {
+public class LongestSubstringWithoutRepeatingCharacter {
     class Solution {
     public int lengthOfLongestSubstring(String s) {
         Map<Character, Integer> m=new HashMap<>();

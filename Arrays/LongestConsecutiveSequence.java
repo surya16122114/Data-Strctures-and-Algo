@@ -36,3 +36,5 @@ public class LongestConsecutiveSequence {
     }
 }
 }
+
+//leetcode problem link: https://leetcode.com/problems/longest-consecutive-sequence/description/

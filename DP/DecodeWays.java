@@ -26,3 +26,6 @@ public class DecodeWays {
     }
 }
 }
+
+
+//leetcode problem link: https://leetcode.com/problems/decode-ways/description/

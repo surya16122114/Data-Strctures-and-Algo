@@ -75,3 +75,5 @@ public class NQueens {
     }
 }
 }
+
+//leetcode problem link: https://leetcode.com/problems/n-queens/description/

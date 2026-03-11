@@ -43,3 +43,44 @@ public class RedundantConnection {
     }
 }
 }
+
+
+//approach 2 using dsu
+
+// class Solution {
+//     int[] parent;
+//     int[] size;
+//     public int[] findRedundantConnection(int[][] edges) {
+//         int n=edges.length;
+//         parent=new int[n];
+//         size=new int[n];
+
+//         for(int i=0; i<n; i++){
+//             parent[i]=i+1;
+//             size[i]=i+1;
+//         }
+//       for(int edge[]: edges){
+//    int ra = find(edge[0]), rb = find(edge[1]);
+//   if(ra==rb)
+//   return new int[]{edge[0], edge[1]};
+// else{
+//  if (size[ra] < size[rb]) { 
+//         parent[ra] = rb; size[rb] += size[ra]; }
+//     else                      {
+//          parent[rb] = ra; size[ra] += size[rb]; }
+
+//       }
+// }
+
+// return new int[]{};
+   
+ 
+// }
+// public int find(int x) {
+//     if (parent[x] != x)
+//         parent[x] = find(parent[x]);
+//     return parent[x];
+// }
+        
+    
+// }

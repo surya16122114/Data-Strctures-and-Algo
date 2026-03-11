@@ -39,3 +39,37 @@ public class ConnectedComponents {
 }
 
 }
+
+
+//approach 2 using dsu
+// class Solution {
+//            int[] parent;
+//     int[] size;   
+//     public int countComponents(int n, int[][] edges) {
+//   parent= new int[n];
+//   size= new int[n];
+//     for (int i = 0; i < n; i++) { parent[i] = i; size[i] = 1; }
+
+//     int components = n; 
+
+//     for (int[] edge : edges) {
+//         int ra = find(edge[0]);
+//         int rb = find(edge[1]);
+//         if (ra != rb) {
+//             if (size[ra] < size[rb]) { parent[ra] = rb; size[rb] += size[ra]; }
+//     else                      { parent[rb] = ra; size[ra] += size[rb]; }
+//        components--;
+//         }
+     
+//     }
+//     return components;
+//     }
+
+
+
+// public int find(int x) {
+//     if (parent[x] != x)
+//         parent[x] = find(parent[x]);
+//     return parent[x];
+// }
+// }

@@ -50,7 +50,7 @@ public class AlienDictionary {
             if(s1.length()>s2.length() && !foundDiff)
                  return "";
            
-            
+            //xbc and ab..this is true
            
         }
         

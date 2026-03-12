@@ -1,53 +1,49 @@
-import java.util.ArrayList;
-import java.util.PriorityQueue;
-
-public class NetworkDelay {
-    class Solution {
+class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
-        
-        boolean visited[]=new boolean[n+1];
-        ArrayList<ArrayList<int[]>> adj=new ArrayList<>();
+        int[] dist=new int[n+1];
+      
+        Arrays.fill(dist, Integer.MAX_VALUE);
+          dist[k]=0;
+        List<List<int[]>> adj=new ArrayList<>();
+
         for(int i=0; i<=n; i++)
         adj.add(new ArrayList<>());
 
-        for(int[] edge: times){
-            adj.get(edge[0]).add(new int[]{edge[1], edge[2]});
+
+        for(int[] time: times){
+            adj.get(time[0]).add(new int[]{time[1], time[2]});
         }
 
-        PriorityQueue<Pair> pq=new PriorityQueue<>((a,b)->a.weight-b.weight);
+        PriorityQueue<int[]> pq=new PriorityQueue<>((a,b)->a[0]-b[0]);
 
-        pq.add(new Pair(0,k));
-int cost=0;
-int seen=0;
+        pq.offer(new int[]{0,k});
+
         while(!pq.isEmpty()){
-            Pair p=pq.poll();
-int node=p.to;
-          if(visited[node])
-          continue;
-            visited[node]=true;
-            seen++;
-              cost=Math.max(cost,p.weight);
+            int[] curr=pq.poll();
 
-              for(int[] neighbor: adj.get(node)){
-                if(!visited[neighbor[0]]){
-                    pq.add(new Pair(cost+neighbor[1], neighbor[0]));
+            int currNode=curr[1];
+            int currDist=curr[0];
+
+            for(int[] neighbor: adj.get(currNode)){
+                if(currDist+neighbor[1]<dist[neighbor[0]]){
+                    dist[neighbor[0]]=currDist+neighbor[1];
+                    pq.offer(new int[]{currDist+neighbor[1], neighbor[0]});
                 }
-              }
+            }
         }
 
-     
-    return seen==n?cost:-1;
 
+        int res=0;
 
+        for(int i=1; i<=n; i++){
+            if(dist[i]==Integer.MAX_VALUE){
+                return -1;
+            }
+
+            res=Math.max(res, dist[i]);
+        }
+
+        return res;
+        
     }
-}
-
-class Pair{
-    int weight;
-    int to;
-    Pair(int weight, int to){
-        this.weight=weight;
-        this.to=to;
-    }
-}
 }

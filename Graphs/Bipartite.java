@@ -59,3 +59,64 @@ public class Bipartite {
     }
 }
 }
+
+
+//second solution using DSU
+// class Solution {
+//     int[] parent;
+//     int[] size;
+
+//     int find(int x){
+//         if(parent[x]!=x)
+//         parent[x]=find(parent[x]);
+
+//         return parent[x];
+//     }
+
+
+//     void union(int a, int b){
+//         int ra=find(a);
+//         int rb=find(b);
+
+//         if(ra!=rb){
+//             if(size[ra]<size[rb]){
+//                 parent[ra]=rb;
+//                 size[rb]+=size[ra];
+//             }
+//             else{
+//                 parent[rb]=ra;
+//                 size[ra]+=size[rb];
+//             }
+//         }
+//     }
+//     public boolean isBipartite(int[][] graph) {
+//         int n=graph.length;
+
+//         parent=new int[n];
+//         size=new int[n];
+
+//         for(int i=0; i<n; i++){
+//             parent[i]=i;
+//             size[i]=1;
+//         }
+
+//         for(int i=0; i<n; i++){
+//             int[] neighbors=graph[i];
+
+//             if(neighbors.length==0)
+//             continue;
+//             int firstNeighbor=neighbors[0];
+
+//             for(int neighbor: neighbors){
+//                 if(find(neighbor)==find(i))
+//                 return false;
+
+
+//                 union(neighbor, firstNeighbor);
+//             }
+//         }
+
+//         return true;
+        
+//     }
+// }

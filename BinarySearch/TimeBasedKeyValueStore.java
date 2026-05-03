@@ -63,3 +63,37 @@ public class TimeBasedKeyValueStore {
  * String param_2 = obj.get(key,timestamp);
  */
 }
+
+//leetcode problem link: https://leetcode.com/problems/time-based-key-value-store/description/
+
+
+//v2 using treemap
+
+// class TimeMap {
+//     Map<String, TreeMap<Integer, String>> m;
+    
+//     public TimeMap() {
+//         m=new HashMap<>();    
+//     }
+    
+//     public void set(String key, String value, int timestamp) {
+//         m.putIfAbsent(key, new TreeMap<>());
+//         m.get(key).put(timestamp, value);
+//     }
+    
+//     public String get(String key, int timestamp) {
+//         if(!m.containsKey(key))
+//         return "";
+//         TreeMap<Integer, String> tree=m.get(key);
+//         Integer floor=tree.floorKey(timestamp);
+//         return floor==null?"":tree.get(floor);
+        
+//     }
+// }
+
+/**
+ * Your TimeMap object will be instantiated and called as such:
+ * TimeMap obj = new TimeMap();
+ * obj.set(key,value,timestamp);
+ * String param_2 = obj.get(key,timestamp);
+ */

@@ -27,4 +27,4 @@ public class FIndMinInARotatedSortedArray {
     }
 }
 
-//leetcode  problem link :  
+//leetcode problem link: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/

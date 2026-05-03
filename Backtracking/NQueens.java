@@ -43,7 +43,7 @@ public class NQueens {
 
     public boolean isSafe(char[][] nQueens, int row, int col){
 
-
+//column check row check is not needed since we ar eplacing one queen in each row at a time 
         for(int i=0; i<row; i++){
             if(nQueens[i][col]=='Q')
             return false;

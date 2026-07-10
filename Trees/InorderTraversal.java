@@ -4,19 +4,20 @@ package Trees;
 import java.util.ArrayList;
 import java.util.List;
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
+public class InorderTraversal {
+   static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode() {}
+        public TreeNode(int val) { this.val = val; }
+      public  TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
-}
-class Solution {
+
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res=new ArrayList<>();
         callInorder(root,res);
@@ -26,9 +27,11 @@ class Solution {
 
     public void callInorder(TreeNode root, List<Integer> res){
         if(root==null)
-        return ;
+            return ;
         callInorder(root.left, res);
         res.add(root.val);
         callInorder(root.right, res);
     }
+
+
 }

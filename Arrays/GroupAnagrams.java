@@ -54,5 +54,56 @@ public class GroupAnagrams {
     }
 }
 
+//more optimised solution
+//class Solution {
+//    public List<List<String>> groupAnagrams(String[] strs) {
+//
+//        Map<String, List<String>> m=new HashMap<>();
+//        for(int i=0; i<strs.length; i++){
+//
+//            int[] count=new int[26];
+//            for(char ch:strs[i].toCharArray()){
+//                count[ch-'a']++;
+//
+//            }
+//
+//            StringBuilder keyBuilder=new StringBuilder();
+//
+//
+//            for(int c: count){
+//                keyBuilder.append('#').append(c);
+//            }
+//            String key=keyBuilder.toString();
+//
+//            m.putIfAbsent(key, new ArrayList<>());
+//
+//            m.get(key).add(strs[i]);
+//
+//
+//        }
+//
+//        List<List<String>> res=new ArrayList<>();
+//
+//        for (Map.Entry<String, List<String>> entry : m.entrySet()) {
+//
+//            String key = entry.getKey();
+//
+//            List<String> temp = entry.getValue();
+//
+//            res.add(temp);
+//
+//
+//
+//        }
+//
+//
+//        return res;
+//
+//
+//
+//
+//    }
+//}
+
 
 //leetcode problem link: https://leetcode.com/problems/group-anagrams/description/
